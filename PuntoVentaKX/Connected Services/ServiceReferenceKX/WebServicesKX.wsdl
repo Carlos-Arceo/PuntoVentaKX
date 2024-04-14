@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="DevolverNombre">
+        <s:complexType />
+      </s:element>
+      <s:element name="DevolverNombreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DevolverNombreResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HoraServidor">
+        <s:complexType />
+      </s:element>
+      <s:element name="HoraServidorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HoraServidorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarReserva">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="folio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarReservaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarReservaResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="DevolverNombreSoapIn">
+    <wsdl:part name="parameters" element="tns:DevolverNombre" />
+  </wsdl:message>
+  <wsdl:message name="DevolverNombreSoapOut">
+    <wsdl:part name="parameters" element="tns:DevolverNombreResponse" />
+  </wsdl:message>
+  <wsdl:message name="HoraServidorSoapIn">
+    <wsdl:part name="parameters" element="tns:HoraServidor" />
+  </wsdl:message>
+  <wsdl:message name="HoraServidorSoapOut">
+    <wsdl:part name="parameters" element="tns:HoraServidorResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarReservaSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarReserva" />
+  </wsdl:message>
+  <wsdl:message name="BuscarReservaSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarReservaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServicesKXSoap">
+    <wsdl:operation name="DevolverNombre">
+      <wsdl:input message="tns:DevolverNombreSoapIn" />
+      <wsdl:output message="tns:DevolverNombreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HoraServidor">
+      <wsdl:input message="tns:HoraServidorSoapIn" />
+      <wsdl:output message="tns:HoraServidorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarReserva">
+      <wsdl:input message="tns:BuscarReservaSoapIn" />
+      <wsdl:output message="tns:BuscarReservaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServicesKXSoap" type="tns:WebServicesKXSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DevolverNombre">
+      <soap:operation soapAction="http://tempuri.org/DevolverNombre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HoraServidor">
+      <soap:operation soapAction="http://tempuri.org/HoraServidor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarReserva">
+      <soap:operation soapAction="http://tempuri.org/BuscarReserva" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServicesKXSoap12" type="tns:WebServicesKXSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DevolverNombre">
+      <soap12:operation soapAction="http://tempuri.org/DevolverNombre" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HoraServidor">
+      <soap12:operation soapAction="http://tempuri.org/HoraServidor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarReserva">
+      <soap12:operation soapAction="http://tempuri.org/BuscarReserva" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServicesKX">
+    <wsdl:port name="WebServicesKXSoap" binding="tns:WebServicesKXSoap">
+      <soap:address location="http://www.webserviceskx.somee.com/WebServicesKX.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServicesKXSoap12" binding="tns:WebServicesKXSoap12">
+      <soap12:address location="http://www.webserviceskx.somee.com/WebServicesKX.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

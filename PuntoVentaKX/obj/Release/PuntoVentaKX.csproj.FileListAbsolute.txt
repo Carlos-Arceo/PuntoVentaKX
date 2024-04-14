@@ -1,0 +1,14 @@
+C:\Users\carlo\OneDrive\Escritorio\PROYECTOS C#\PuntoVentaKX\PuntoVentaKX\bin\Release\PuntoVentaKX.exe.config
+C:\Users\carlo\OneDrive\Escritorio\PROYECTOS C#\PuntoVentaKX\PuntoVentaKX\bin\Release\PuntoVentaKX.exe.manifest
+C:\Users\carlo\OneDrive\Escritorio\PROYECTOS C#\PuntoVentaKX\PuntoVentaKX\bin\Release\PuntoVentaKX.application
+C:\Users\carlo\OneDrive\Escritorio\PROYECTOS C#\PuntoVentaKX\PuntoVentaKX\bin\Release\PuntoVentaKX.exe
+C:\Users\carlo\OneDrive\Escritorio\PROYECTOS C#\PuntoVentaKX\PuntoVentaKX\bin\Release\PuntoVentaKX.pdb
+C:\Users\carlo\OneDrive\Escritorio\PROYECTOS C#\PuntoVentaKX\PuntoVentaKX\obj\Release\PuntoVentaKX.csproj.AssemblyReference.cache
+C:\Users\carlo\OneDrive\Escritorio\PROYECTOS C#\PuntoVentaKX\PuntoVentaKX\obj\Release\PuntoVentaKX.Form1.resources
+C:\Users\carlo\OneDrive\Escritorio\PROYECTOS C#\PuntoVentaKX\PuntoVentaKX\obj\Release\PuntoVentaKX.Properties.Resources.resources
+C:\Users\carlo\OneDrive\Escritorio\PROYECTOS C#\PuntoVentaKX\PuntoVentaKX\obj\Release\PuntoVentaKX.csproj.GenerateResource.cache
+C:\Users\carlo\OneDrive\Escritorio\PROYECTOS C#\PuntoVentaKX\PuntoVentaKX\obj\Release\PuntoVentaKX.csproj.CoreCompileInputs.cache
+C:\Users\carlo\OneDrive\Escritorio\PROYECTOS C#\PuntoVentaKX\PuntoVentaKX\obj\Release\PuntoVentaKX.exe.manifest
+C:\Users\carlo\OneDrive\Escritorio\PROYECTOS C#\PuntoVentaKX\PuntoVentaKX\obj\Release\PuntoVentaKX.application
+C:\Users\carlo\OneDrive\Escritorio\PROYECTOS C#\PuntoVentaKX\PuntoVentaKX\obj\Release\PuntoVentaKX.exe
+C:\Users\carlo\OneDrive\Escritorio\PROYECTOS C#\PuntoVentaKX\PuntoVentaKX\obj\Release\PuntoVentaKX.pdb
